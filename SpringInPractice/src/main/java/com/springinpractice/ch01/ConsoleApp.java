@@ -13,6 +13,7 @@ public class ConsoleApp {
 	
 	public static void main(String args[]) throws Exception {
 		
+		@SuppressWarnings("resource")
 		ApplicationContext appCtx =
 				new ClassPathXmlApplicationContext("applicationContext.xml");
 		
@@ -26,6 +27,7 @@ public class ConsoleApp {
 		} // end for loop
 		
 		System.out.println("Done running ConsoleApp");
+		
 		
 	} // end main
 
